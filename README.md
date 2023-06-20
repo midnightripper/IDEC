@@ -1,4 +1,3 @@
-```markdown
 ## Deep Embedding Clustering Loss
 
 The Deep Embedding Clustering (DEC) loss function is a combination of two components: the reconstruction loss and the clustering loss. It aims to jointly optimize the deep neural network's embedding and the clustering assignments in an unsupervised manner.
@@ -15,13 +14,10 @@ The clustering loss promotes discriminative embeddings that capture the underlyi
 
 The overall Deep Embedding Clustering loss is obtained by combining these two components with appropriate weighting factors:
 
-```
 Loss = Reconstruction Loss + Clustering Loss
-```
 
 The relative weights of the two components can be adjusted based on the specific requirements of the problem.
 
 During training, the deep neural network and the clustering assignments are iteratively optimized by minimizing this loss function. The optimization typically involves alternating steps between updating the cluster assignments based on the current embeddings and refining the embeddings based on the current cluster assignments. This iterative process continues until convergence is reached, resulting in improved embeddings and well-separated clusters.
 
 By jointly optimizing the reconstruction and clustering aspects, the DEC loss function allows the model to learn embeddings that capture both the reconstruction fidelity and the clustering structure of the data, leading to effective unsupervised clustering in high-dimensional spaces.
-```
