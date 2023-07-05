@@ -1,0 +1,8 @@
+.cache/
+*.json
+.local/
+.ipynb_checkpoints/
+.ipython/
+*.txt
+*.mat
+*.sh
